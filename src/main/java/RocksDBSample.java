@@ -32,7 +32,7 @@ public class RocksDBSample {
          final ReadOptions readOptions = new ReadOptions()
              .setFillCache(false);
          final Statistics stats = new Statistics();
-         final RateLimiter rateLimiter = new RateLimiter(10000000,10000, 10)) {
+         final RateLimiter rateLimiter = new RateLimiter(10000000,100000, 10)) {
 
       try (final RocksDB db = RocksDB.open(options, db_path_not_found)) {
         assert (false);
